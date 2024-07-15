@@ -5,11 +5,11 @@
 class Hammer < Formula
   desc ""
   homepage "https://hammer.matteogassend.com"
-  version "0.0.53"
+  version "0.0.6"
 
   on_macos do
-    url "https://github.com/matfire/hammer/releases/download/0.0.53/hammer_Darwin_all.tar.gz"
-    sha256 "bf4b9b8d36e0127355fce3bfadf350dc5ad3526a2e58fd6481d0bf311684c720"
+    url "https://github.com/matfire/hammer/releases/download/0.0.6/hammer_Darwin_all.tar.gz"
+    sha256 "2e164c0c6dfe60a33c8e2dee88c3e27468b4e08a418295e2aaa4fb99fcde4b81"
 
     def install
       bin.install "hammer"
@@ -19,8 +19,8 @@ class Hammer < Formula
   on_linux do
     on_intel do
       if Hardware::CPU.is_64_bit?
-        url "https://github.com/matfire/hammer/releases/download/0.0.53/hammer_Linux_x86_64.tar.gz"
-        sha256 "73b3ac63d862559286c6c4d7c7d0e5c99d51b6f3e3a972ec2daa8cb3e731e166"
+        url "https://github.com/matfire/hammer/releases/download/0.0.6/hammer_Linux_x86_64.tar.gz"
+        sha256 "64eb4704ea93b1e0f7e840f52063b5327a0c2ec1eb7adf78bab6d3833c137801"
 
         def install
           bin.install "hammer"
@@ -29,8 +29,8 @@ class Hammer < Formula
     end
     on_arm do
       if Hardware::CPU.is_64_bit?
-        url "https://github.com/matfire/hammer/releases/download/0.0.53/hammer_Linux_arm64.tar.gz"
-        sha256 "18eaa884597ad8d17de32cc6045b5a25380f38a2c4ed07542652479f52f13cfb"
+        url "https://github.com/matfire/hammer/releases/download/0.0.6/hammer_Linux_arm64.tar.gz"
+        sha256 "310f22e4b5cf71dc95e0009dd1e2749b410cd21b43b6aaea2654493fe133ad7e"
 
         def install
           bin.install "hammer"
