@@ -5,11 +5,11 @@
 class Libsqltui < Formula
   desc ""
   homepage "https://libsqltui.matteogassend.com"
-  version "0.0.2"
+  version "0.0.3"
 
   on_macos do
-    url "https://github.com/matfire/libsqltui/releases/download/0.0.2/libsqltui_Darwin_all.tar.gz"
-    sha256 "44c7fe07505cc85be3ad905ad7b3643f6866047ba20cdd090ab32f8649cafc75"
+    url "https://github.com/matfire/libsqltui/releases/download/0.0.3/libsqltui_Darwin_all.tar.gz"
+    sha256 "fb38ba2005e534ed6945d1d86fcd4b3b417d16afdb69a912ffc589b12a335461"
 
     def install
       bin.install "libsqltui"
@@ -19,8 +19,8 @@ class Libsqltui < Formula
   on_linux do
     on_intel do
       if Hardware::CPU.is_64_bit?
-        url "https://github.com/matfire/libsqltui/releases/download/0.0.2/libsqltui_Linux_x86_64.tar.gz"
-        sha256 "dbf597d9583d030cd1f0d97e976d96e9e4619f06bec783a7e6fbd91179247ba1"
+        url "https://github.com/matfire/libsqltui/releases/download/0.0.3/libsqltui_Linux_x86_64.tar.gz"
+        sha256 "896452dad552d18e10ab0be8bfe72186da311e499921a0e8162e6de67dfa25ef"
 
         def install
           bin.install "libsqltui"
@@ -29,8 +29,8 @@ class Libsqltui < Formula
     end
     on_arm do
       if Hardware::CPU.is_64_bit?
-        url "https://github.com/matfire/libsqltui/releases/download/0.0.2/libsqltui_Linux_arm64.tar.gz"
-        sha256 "8de0eafa90b2d0a9d94a92e145f60d59cca6f66eb7b991643ee4a11ee0141d2e"
+        url "https://github.com/matfire/libsqltui/releases/download/0.0.3/libsqltui_Linux_arm64.tar.gz"
+        sha256 "667f58ac53a353d2f395f4009fe257750b85b1012a0b91873332f5284e507d5b"
 
         def install
           bin.install "libsqltui"
