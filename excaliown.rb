@@ -5,11 +5,11 @@
 class Excaliown < Formula
   desc ""
   homepage "https://excaliown.matteogassend.com"
-  version "0.0.1"
+  version "0.0.11"
 
   on_macos do
-    url "https://github.com/matfire/excaliown/releases/download/0.0.1/excaliown_Darwin_all.tar.gz"
-    sha256 "c75084fd578557cd6284c038cb09df9e51383af087e8a88a3d36d770bd767d2e"
+    url "https://github.com/matfire/excaliown/releases/download/0.0.11/excaliown_Darwin_all.tar.gz"
+    sha256 "2245ea6221b2bb8dda3770da27c8f0ac3190de5c68a6a101c6f97cca70e5ad11"
 
     def install
       bin.install "excaliown"
@@ -19,8 +19,8 @@ class Excaliown < Formula
   on_linux do
     if Hardware::CPU.intel?
       if Hardware::CPU.is_64_bit?
-        url "https://github.com/matfire/excaliown/releases/download/0.0.1/excaliown_Linux_x86_64.tar.gz"
-        sha256 "d2721fa87c6075521ddd236a0efa599f85859b75772fbbb46361d8578b476811"
+        url "https://github.com/matfire/excaliown/releases/download/0.0.11/excaliown_Linux_x86_64.tar.gz"
+        sha256 "abcfee5ba24b10e10241c60003d9c902ec80267b9a3c8230b8e23a824f93da7b"
 
         def install
           bin.install "excaliown"
@@ -29,8 +29,8 @@ class Excaliown < Formula
     end
     if Hardware::CPU.arm?
       if Hardware::CPU.is_64_bit?
-        url "https://github.com/matfire/excaliown/releases/download/0.0.1/excaliown_Linux_arm64.tar.gz"
-        sha256 "dd6737f81b8d091c36a7b7e5263306b4acb8438b25ba15b0c4ea84275ad00630"
+        url "https://github.com/matfire/excaliown/releases/download/0.0.11/excaliown_Linux_arm64.tar.gz"
+        sha256 "197142d9a2fd1efe8455b136a3ec22b4db92511fd7573ac11d8fce5e786435ea"
 
         def install
           bin.install "excaliown"
