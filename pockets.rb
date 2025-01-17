@@ -5,20 +5,20 @@
 class Pockets < Formula
   desc ""
   homepage "https://pockets.matteogassend.com"
-  version "0.0.1"
+  version "0.0.2"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/matfire/pockets/releases/download/0.0.1/pockets_Darwin_x86_64.tar.gz"
-      sha256 "2b01da0c37dbcb3da59bcaf1f6eccc6a82c83204ebf2ab412759e677787c29b4"
+      url "https://github.com/matfire/pockets/releases/download/0.0.2/pockets_Darwin_x86_64.tar.gz"
+      sha256 "c7026dcf22f9adc9a18be457b04fed97feda472654ddc72d7731f9ce5ad28b24"
 
       def install
         bin.install "pockets"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/matfire/pockets/releases/download/0.0.1/pockets_Darwin_arm64.tar.gz"
-      sha256 "1ca32e69df2afcf3f558ca5fcab341cd867bf6bc1b477ed99f12aca7971db337"
+      url "https://github.com/matfire/pockets/releases/download/0.0.2/pockets_Darwin_arm64.tar.gz"
+      sha256 "27e8368883c879afabaf9abfb1842f3ae26170f8bb2e706d28655b41cdacd060"
 
       def install
         bin.install "pockets"
@@ -29,8 +29,8 @@ class Pockets < Formula
   on_linux do
     if Hardware::CPU.intel?
       if Hardware::CPU.is_64_bit?
-        url "https://github.com/matfire/pockets/releases/download/0.0.1/pockets_Linux_x86_64.tar.gz"
-        sha256 "fd3124542e9e75e262e74d321b0c1d55101abd1dd2d78f867df3b6faa5643a33"
+        url "https://github.com/matfire/pockets/releases/download/0.0.2/pockets_Linux_x86_64.tar.gz"
+        sha256 "dc7a7bedbd5a4b6e168b6a108e630125af19d1090334b111166995e2e7f37226"
 
         def install
           bin.install "pockets"
@@ -39,8 +39,8 @@ class Pockets < Formula
     end
     if Hardware::CPU.arm?
       if Hardware::CPU.is_64_bit?
-        url "https://github.com/matfire/pockets/releases/download/0.0.1/pockets_Linux_arm64.tar.gz"
-        sha256 "88d015a8dc3c19f43bfc13369a218ea19a74994c8eea51299f8247fc3a743045"
+        url "https://github.com/matfire/pockets/releases/download/0.0.2/pockets_Linux_arm64.tar.gz"
+        sha256 "37140aed58d6be8db81dd371594fa56d8e6e3f1153294d93d9b9085a247ea877"
 
         def install
           bin.install "pockets"
