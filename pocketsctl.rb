@@ -5,20 +5,20 @@
 class Pocketsctl < Formula
   desc ""
   homepage "https://pockets.matteogassend.com"
-  version "0.0.1"
+  version "0.0.2"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/matfire/pockets/releases/download/0.0.1/pocketsctl_Darwin_x86_64.tar.gz"
-      sha256 "87cbf3967aad6303914217ef6b0fb0890f6db1bb18b6bb99b42651b8e564a298"
+      url "https://github.com/matfire/pockets/releases/download/0.0.2/pocketsctl_Darwin_x86_64.tar.gz"
+      sha256 "10995b559177786fd78b5e4f6270d6ade99ff1bffe045a72811b7688d87b5c14"
 
       def install
         bin.install "pocketsctl"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/matfire/pockets/releases/download/0.0.1/pocketsctl_Darwin_arm64.tar.gz"
-      sha256 "c8b354a6fa0fcea6cdf4289b316e2f659a5ee90cb9a4d5b19253c80e917002dd"
+      url "https://github.com/matfire/pockets/releases/download/0.0.2/pocketsctl_Darwin_arm64.tar.gz"
+      sha256 "456dd6d1f8a389ac173500e6ef720c6d408fbe54f7b5319ee987ddcde18a6fab"
 
       def install
         bin.install "pocketsctl"
@@ -29,8 +29,8 @@ class Pocketsctl < Formula
   on_linux do
     if Hardware::CPU.intel?
       if Hardware::CPU.is_64_bit?
-        url "https://github.com/matfire/pockets/releases/download/0.0.1/pocketsctl_Linux_x86_64.tar.gz"
-        sha256 "13566ac5bdffc9390c0af4af140c871ea624fa572ac4776e40ce04e76ae3bb8d"
+        url "https://github.com/matfire/pockets/releases/download/0.0.2/pocketsctl_Linux_x86_64.tar.gz"
+        sha256 "0acac06a9fe206b94ec1b7167b3cbd7e568ce8a38f9021aa5e3ff85dd22af86f"
 
         def install
           bin.install "pocketsctl"
@@ -39,8 +39,8 @@ class Pocketsctl < Formula
     end
     if Hardware::CPU.arm?
       if Hardware::CPU.is_64_bit?
-        url "https://github.com/matfire/pockets/releases/download/0.0.1/pocketsctl_Linux_arm64.tar.gz"
-        sha256 "5e9175ae71a89ff30a2856547c190489e935c79a47fdf3453c7e442f5a9ba762"
+        url "https://github.com/matfire/pockets/releases/download/0.0.2/pocketsctl_Linux_arm64.tar.gz"
+        sha256 "d447a0ac5f05bc5e55bc592f2eab9508c7696c98846688c18996041c24c14327"
 
         def install
           bin.install "pocketsctl"
